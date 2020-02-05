@@ -5,5 +5,5 @@ vscode:
 tasks:
   - init: |
       mkdir build && cd build
-      cmake .. -CMAKE_EXPORT_COMPILE_COMMANDS=ON
+      cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
       make -j $(nproc)
