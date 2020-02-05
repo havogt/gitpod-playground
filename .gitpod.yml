@@ -1,0 +1,9 @@
+vscode:
+  extensions:
+    - ms-vscode.cpptools@0.26.2:Pq/tmf2WN3SanVzB4xZc1g==
+
+tasks:
+  - init: |
+      mkdir build && cd build
+      cmake .. -CMAKE_EXPORT_COMPILE_COMMANDS=ON
+      make -j $(nproc)
